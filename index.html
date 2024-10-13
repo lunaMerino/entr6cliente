@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="text/javascript" src="/entr6/js/main.js" defer></script>
+    <title>Document</title>
+</head>
+<body class="bg-neutral-800 text-slate-50">
+    <div id="contact" class="flex justify-center">
+        <form action="mailto:tuMail@vedruna.es" class="w-3/5 h-3/5" method="get" id="formulario" class="mt-2">
+            <fieldset class="p-4 border border-primary">
+                <legend class="text-light border border-primary px-2 py-1">Contact me</legend>
+    
+                <div id="divSubject" class="flex flex-col mt-1">
+                    <label for="inputSubject" class="text-primary mb-2">Subject:</label>
+                    <input type="text" id="inputSubject" class="border border-gray-300 rounded-md p-2 text-info bg-neutral-700" name="inputSubject" required />
+                </div>
+    
+                <div id="divEmail" class="flex flex-col mt-1">
+                    <label for="inputEmail" class="text-primary mb-2">Email:</label>
+                    <div class="flex">
+                        <span class="bg-gray-200 border border-gray-300 rounded-l-md px-3 py-2 text-neutral-800">@</span>
+                        <input type="email" id="inputEmail" class="border border-gray-300 rounded-r-md p-2 text-info bg-neutral-700" name="inputEmail" required />
+                    </div>
+                </div>
+                
+    
+                <div id="divTextBody" class="flex flex-col mt-2">
+                    <label for="textBody" class="text-primary mb-2">Cuerpo del mensaje:</label>
+                    <textarea id="textBody" class="border border-gray-300 rounded-md p-2 text-info mt-2 bg-neutral-700 " name="textBody>"
+                        placeholder="Aqui va el cuerpo del mensaje..." rows="15" required></textarea>
+                </div>
+    
+                <div class="flex justify-center mt-2">
+                    <input id="sendBttn" class="bg-blue-600 text-white rounded-lg px-4 py-2 hover:bg-blue-700 transition duration-300" type="submit" value="Send" />
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    
+    
+</body>
+</html>
